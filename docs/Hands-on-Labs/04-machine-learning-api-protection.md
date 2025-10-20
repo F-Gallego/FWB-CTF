@@ -89,7 +89,7 @@ Associate a machine learning policy to the JuiceShop server policy
 
         ![Import](machine-learning-api-protection-import.png)
 
-    1. Uplaod the **ML DAT** file and click ![OK](ok.png)
+    1. Uplaod the **ML DAT** file and click ![OK](ok.png) twice
 
         ![Import juiceshop_policy.apilearning.dat](machine-learning-api-protection-juiceshop_policy-apilearning.png)
 
@@ -148,3 +148,7 @@ Log into the Jumpbox, modify the /etc/hosts file and launch an attack
     ```
 
     ![MLApi img9](MLApi-img9.png)
+
+
+    !!! tip
+        Check your CTF :)

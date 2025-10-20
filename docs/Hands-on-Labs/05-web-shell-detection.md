@@ -45,9 +45,9 @@ Attackers may attempt to upload Trojan horse code (written in scripting language
 
     1. Scroll down and select **Web Protection Profile**, and click **Create**
 
-        ![lab1 botpr img12](web-shell-detection-create-new.png)
+        ![lab1 botpr img12](webshell-create-webprofile.png)
 
-    1. Name the profile **WP_DVWA**, scroll to **Web Shell Detection** and associate **DVWA_Webshell_Uploading**. Click **OK**
+    1. Name the profile **WP_DVWA**, scroll to **Web Shell Detection** and associate **DVWA_Webshell_Uploading**. Click ![OK](ok.png)
 
         ![lab1 botpr img13](web-shell-detection-webshell-profile-create.png)
 
@@ -77,7 +77,10 @@ Attackers may attempt to upload Trojan horse code (written in scripting language
         end
         ```
 
-## Task 2: Results
+    1. Select the recently created Web Protection Profile and then click ![OK](ok.png)
+
+
+## Task 2: Run and check the results
 
 The following steps are completed on a Jumpbox to avoid any anti virus detection software on the local workstation
 

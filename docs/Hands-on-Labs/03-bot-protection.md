@@ -5,7 +5,7 @@ mark_as_read:
 
 # Lab 3: Bot Protection
 
-Using the Jumpbox launch an automated Bot attack against the JuiceShop, and then create a Bot mitigation policy on the Fortinet to protect JuiceShop
+Using the Jumpbox, launch an automated Bot attack against the JuiceShop, and then create a Bot mitigation policy on the FortiWeb to protect JuiceShop.
 
 ## Task 1: Jumpbox Login
 
@@ -36,6 +36,10 @@ Using the Jumpbox launch an automated Bot attack against the JuiceShop, and then
         - ```i``` to activate edit mode
         - ```:wq!``` to save and exit
         - ```:q!``` to quit without saving
+
+    !!! tip
+        - You can use the clipboard to copy and paste from/to your machine to Kali using the arrow on the right
+        ![kali-vnc-clipboard.png](kali-vnc-clipboard.png)
 
     ![lab1 botpr img2](lab1-botpr-img2.png)
 
@@ -83,7 +87,7 @@ Create a Bot Mitigation profile and associate it with the server policy to block
 
         ![bot-protection-create-newb.png](bot-protection-create-newb.png)
 
-    1. Click ![OK](ok.png)
+    1. Fill out as below and click ![OK](ok.png)
     
         - **Type**: Regular Expression
         - **Request URL**: .*
@@ -204,4 +208,7 @@ Create a Bot Mitigation profile and associate it with the server policy to block
     ![lab1 botpr img17](lab1-botpr-img17.png)
 
     !!! note
-        If the error/block message is not displayed, FortiWeb may still be "learning" the attack behavior
+        If the error/block message is not displayed, FortiWeb may still be "learning" the attack behavior. Wait 4 minutes and try again.
+
+    !!! tip
+        Check your CTF :)

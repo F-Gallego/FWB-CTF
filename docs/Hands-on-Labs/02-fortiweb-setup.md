@@ -18,7 +18,8 @@ The Interface IP address of the FortiWeb is used for management on port 8443 and
 1. Navigate to: [https://FortiWeb-IP:8443](https://FortiWeb-IP:8443) (Substitute the IP address from the Google Console) and use **port 8443**
 
     - Username: **admin**
-    - Password: (Retreive password from Google Console)
+    - Password: (Retreive password from Qwiklabs)
+    - You will need to change the password
 
     ![Lab0 Task1 img1](Lab0-Task1-img1.png)
 
@@ -215,13 +216,15 @@ A Server Policy will associate the virtual server IP address with an application
 
         ![Lab0 Task1 img15](Lab0-Task1-img15.png)
 
-    1.  Fill in the values and click ![OK](ok.png) twice
+    1.  Fill in the values and click ![OK](ok.png) 
 
         - **Name**: HTTP_3000
         - **Protocol**: TCP
         - **Port**: 3000
 
         ![Lab0 Task1 img16](Lab0-Task1-img16.png)
+    
+    1.  Select the service created and click ![OK](ok.png) 
 
 === "CLI"
 
@@ -284,7 +287,7 @@ A Server Policy will associate the virtual server IP address with an application
         show server-policy policy DVWA_server_policy
         ```
 
-## Task 6: DVWA Reset
+## Task 7: DVWA Reset
 
 1. Copy the **FortiWeb Public IP**
 
