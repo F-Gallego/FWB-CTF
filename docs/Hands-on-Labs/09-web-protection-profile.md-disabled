@@ -1,0 +1,38 @@
+---
+mark_as_read:
+    updated_at: 2024-03-24 17:00:00+03:00
+---
+
+# Lab 9: Web Protection Profile
+
+## Task 1: Enable
+
+1. Go to **Policy** -> **Server Policy**
+
+1. Double click **DVWA_server_policy**
+
+1. Scroll down to **Security Configuration** and click the box **Web Protection Profile**
+
+1. Click **Create**
+
+    ![wp dvwa img1](wp-dvwa-img1.png)
+
+1. Name the **Inline Protection Profile** **WP_DVWA** and click ![OK](ok.png)
+
+    ![wp dvwa img2](wp-dvwa-img2.png)
+
+1. Select the previously created profile and click ![OK](ok.png) 
+
+    ![wp dvwa img3](wp-dvwa-img3.png)
+
+## Task 2: Disable
+
+1. Navigate to: **Policy** -> **Server Policy**
+
+1. Double click **DVWA_server_policy**
+
+1. Scroll down to **Security Configuration** and click **Web Protection Profile**
+
+1. Leave the field blank and click ![OK](ok.png)
+
+    ![wp dvwa img4](wp-dvwa-img4.png)

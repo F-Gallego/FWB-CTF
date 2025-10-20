@@ -1,12 +1,12 @@
-site_name: Cloud Workshop
-site_description: Azure Cloud Workshop Documentation
-site_author: 40docs
-site_url: https://40docs.github.io/workshop_content_template/
+site_name: FortiWeb Capture the Flag Workshop
+site_description: FortiWeb CTF Workshop docs
+site_author: FGallego
+site_url: https://f-gallego.github.io/FWB-CTF/
 copyright: "40docs Organization"
 
 # Repository
-repo_name: 40docs/workshop_azure
-repo_url: https://github.com/40docs/workshop_content_template
+repo_name: F-Gallego/FWB-CTF
+repo_url: https://github.com/F-Gallego/FWB-CTF
 edit_uri: edit/main/docs/
 
 # Theme configuration
