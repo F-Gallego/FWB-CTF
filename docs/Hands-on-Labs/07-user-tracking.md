@@ -88,12 +88,13 @@ Track user sessions and log the username
 
 1. Navigate to: **Log & Report** -> **Log Access** -> **Attack**
 
-    ![Attack Logs](attack-logs.png)
-
-1. Click **URL**, and scroll down to select **Username**, and then click **Apply**
+1. Right-click **URL**, and scroll down to select **Username**, and then click **Apply**
 
     ![Lab5 ut img10](Lab5-ut-img10.png)
 
 1. The Username is displayed in the logs
 
     ![Lab5 ut img11](Lab5-ut-img11.png)
+
+ !!! tip
+        Check your CTF :)

@@ -28,7 +28,7 @@ Simulate a password hacking attack, and create a CSRF protection profile to miti
 
     ![lab4 csrf img5](lab4-csrf-img5.png)
 
-1. Edit the URL to change the password to **hacked**, open a new broswer tab and paste the modified URL
+1. Edit the URL to change the password to **hacked**, open a new browser tab and paste the modified URL
 
     - [http://**FortiWeb Public IP**/vulnerabilities/csrf/?password_new=hacked&password_conf=hacked&Change=Change#](http://FortiWeb Public IP/vulnerabilities/csrf/?password_new=hacked&password_conf=hacked&Change=Change#)
 
@@ -46,9 +46,12 @@ Simulate a password hacking attack, and create a CSRF protection profile to miti
 
     ![csrf-protection-create-new.png](csrf-protection-create-new.png)
 
-1. Name the CSRF Protection Rule **DVWA_CSRF** and follow the settings below. Click ![OK](ok.png)
+1. Create the 2 new entries following the settings below. Click ![OK](ok.png)
 
     - /vulnerabilities/csrf/
+    - *Only for the URL list entry*:
+        - Parameter name: password_new
+        - Parameter value: .*
 
     ![lab4 csrf img1](lab4-csrf-img1.png)
 
@@ -66,7 +69,7 @@ Add the CSRF profile to the **Web Protection Profile**.
 
     ![lab4 csrf img3](lab4-csrf-img3.png)
 
-## Task 4: Mitigated Attack
+## Task 4: Mitigate the Attack
 
 1. Open DVWA
 
@@ -88,3 +91,6 @@ Add the CSRF profile to the **Web Protection Profile**.
     ![lab4 csrf img8](lab4-csrf-img8.png)
 
 1. Review the logs for more detail
+
+ !!! tip
+        Check your CTF :)

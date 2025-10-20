@@ -84,11 +84,14 @@ Attackers may attempt to upload Trojan horse code (written in scripting language
 
 The following steps are completed on a Jumpbox to avoid any anti virus detection software on the local workstation
 
-1. On the Jumpbox, use Firefox to download the [wso.php](wso.php) file
+1. On the Jumpbox, use Firefox to download the [wso.php](https://raw.githubusercontent.com/FortiLatam/juiceshop/refs/heads/main/helpers/wso.php) file
 
-    - [Copy this Link](wso.php)
+    - [Copy this Link](https://raw.githubusercontent.com/FortiLatam/juiceshop/refs/heads/main/helpers/wso.php)
 
 1. Browse to the DVWA web application, log in and click **File Upload** then **Browse** to upload the wso.php file
+    
+    !!! tip
+        Note: to access DVWA you must use FortiWeb's public IP
 
     ![lab webshell img5](lab-webshell-img5.png)
 
@@ -99,3 +102,6 @@ The following steps are completed on a Jumpbox to avoid any anti virus detection
 1. FortiWeb blocked the request
 
     ![lab webshell img7](lab-webshell-img7.png)
+
+ !!! tip
+        Check your CTF :)

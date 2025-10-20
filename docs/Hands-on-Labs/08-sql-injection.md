@@ -7,6 +7,8 @@ mark_as_read:
 
 ## Task 1: Launch SQL Attack
 
+1. Disable the Web Protection Profile under Juice Shop Server Policy. No screenshots - it's a small challenge :) 
+
 1. Open a the browser in Kali Linux VM and type the Public IP assigned to the FortiWeb instance followed by port 3000 to get to the JuiceShop Web Page. http://FortiWebIP:3000
 
 1. Launch an SQLi attack append ```?name=' OR 'x'='x``` to the URL.
@@ -47,9 +49,8 @@ mark_as_read:
 
 Burp Suite gives us a quick and easy way to query targeted sites.
 
-1. Log into the Jumpbox using the public IP from the Google Console Student Resources
+1. Log into the Jumpbox using the public IP from the Qwiklabs Student Resources
 
-    - [https://kali-pip/vnc.html](https://kali-pip/vnc.html)
 
 1. At the bottom of the page, click on the terminal icon and run the following command
 
@@ -131,7 +132,7 @@ Burp Suite gives us a quick and easy way to query targeted sites.
 1. Increase the number of threads to complete the requests faster by adding the **--threads 10**
 
     ```bash
-    sqlmap -u "http://FortiWeb Public IP:3000/rest/products/search?q=" --technique=B --tables **--threads 10**
+    sqlmap -u "http://FortiWeb Public IP:3000/rest/products/search?q=" --technique=B --tables --threads 10
     ```
 
     ```plaintext
@@ -161,7 +162,7 @@ Burp Suite gives us a quick and easy way to query targeted sites.
     +-------------------+
     ```
 
-1. Execute the following command in the Jumpbox terminal
+1. Execute the following command in the Jumpbox terminal. Answer N (no) when prompted.
 
     ```bash
     sqlmap -u "http://FortiWeb Public IP:3000/rest/products/search?q=" --technique=B -T Cards --threads 10 --dump
@@ -191,7 +192,7 @@ Burp Suite gives us a quick and easy way to query targeted sites.
 
     ![LE3 MLA img1](LE3-MLA-img1.png)
 
-1. Because we are using a pre-trained data model based on a wildcard url, we will need to use a domain name. For this test, we are going to edit the **/etc/hosts** file on Kali. This will allow us to locally resolve **student.fwebtraincse.com**. Open a new Terminal and use the directional arrows on your keyboard to navigate. When you get to the bottom of the hosts file, input **fortiweb-public-ip** **student.fwebtraincse.com**. Use INSERT to start editing the file. To exit saving the file: ESC then type ```wq!``` and ENTER. To exit without saving: ESC then type ```q!``` and ENTER
+1. Because we are using a pre-trained data model based on a wildcard url, we will need to use a domain name. For this test, we are going to edit the **/etc/hosts** file on Kali. This will allow us to locally resolve **student.fwebtraincse.com**. Open a new Terminal and use the directional arrows on your keyboard to navigate. When you get to the bottom of the hosts file, input **FORTIWEB PUBLIC IP** **student.fwebtraincse.com**. Use INSERT to start editing the file. To exit saving the file: ESC then type ```wq!``` and ENTER. To exit without saving: ESC then type ```q!``` and ENTER
 
     ![LE3 MLA img2](LE3-MLA-img2.png)
 
@@ -230,3 +231,7 @@ Burp Suite gives us a quick and easy way to query targeted sites.
 1. Drill into the threat log to view **Log Details**, to view the request blocked by **Machine Learning**
 
     ![LE3 MLA img9](LE3-MLA-img9.png)
+
+
+ !!! tip
+        Thank you for participating! Check your CTF for the remaining questions. I hope you had fun learning something new today :)
